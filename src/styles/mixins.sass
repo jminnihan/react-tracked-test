@@ -1,0 +1,18 @@
+
+@mixin placeholder
+  &::-webkit-input-placeholder
+    @content
+
+  &:-moz-placeholder
+    @content
+
+  &::-moz-placeholder
+    @content
+
+  &:-ms-input-placeholder
+    @content
+
+@mixin transition-ease-in-out ($item, $time)
+  -webkit-transition: $item $time ease-in-out $time
+  transition: $item $time ease-in-out $time
+

@@ -1,0 +1,126 @@
+
+@import '~normalize.css/normalize.css'
+@import './imports.sass'
+
+html
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+
+
+*, *::before, *::after
+  box-sizing: inherit
+
+body
+  color: #182026
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
+  font-size: 14px
+  font-weight: 400
+  letter-spacing: 0
+  line-height: 1.28581
+  text-transform: none
+
+p
+  margin-bottom: 10px
+  margin-top: 0
+
+
+small
+  font-size: 12px
+
+
+strong
+  font-weight: 600
+
+html, body, #root
+  background-color: white !important
+  color: black
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
+  height: 100%
+  margin: 0
+  max-width: 100%
+  min-width: 100%
+  padding: 0
+  width: 100%
+  -webkit-tap-highlight-color: transparent
+
+@media print
+  @page
+    margin: 0 !important
+    max-width: 100%
+
+  html
+    font-size: 70% !important
+    width: 100%
+
+  body
+    font-size: 14px !important
+    margin: 5px !important
+    width: 100%
+
+  #root
+    > .app-view
+      display: block
+      height: auto
+      overflow-x: visible !important
+      overflow-y: visible !important
+      position: relative
+      -webkit-print-color-adjust: exact
+
+      > .container
+        > .topnav
+          display: none !important
+
+.app-view .content
+  flex: 1
+  height: 100%
+  overflow-x: hidden
+  overflow-y: scroll
+  position: relative
+
+#root
+  height: 100%
+  margin: 0
+  padding: 0
+  width: 100%
+
+.app-view
+  display: flex
+  flex-direction: column
+  height: 100%
+  overflow-y: hidden
+  position: relative
+
+.w-screen
+  width: 100vw
+
+.h-screen
+  height: 100vh
+
+.absolute
+  position: absolute
+
+.relative
+  position: relative
+
+.mx-auto
+  margin-left: auto
+  margin-right: auto
+
+.py-16
+  padding-bottom: 4rem
+  padding-top: 4rem
+
+.sign-in-button
+  align-content: center
+  align-self: center
+  border: none
+  border-radius: 2px
+  box-shadow: none
+  cursor: pointer
+  display: inline-flex
+  flex-direction: row
+  font-size: 16px
+  font-weight: bold
+  margin-top: 10px
+  min-width: 130px
+  padding: 5px 16px

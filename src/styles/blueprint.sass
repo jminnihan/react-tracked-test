@@ -1,0 +1,78 @@
+
+@import './variables.sass'
+
+// Blueprint overrides
+
+// Gray scale
+$black: $text-color // text-color
+
+$gray1: $gray-7 // Gray7
+$gray2: $gray-6 // Gray6
+$gray3: $gray-5 // Gray5
+$gray4: $gray-4 // Gray4
+$gray5: $gray-3 // Gray3
+
+$light-gray1: $gray-2 // Gray2
+$light-gray2: $gray-1 // Gray1
+$light-gray3: $background-color // Background-color
+
+// Core colors
+$blue1: $dark-blue // Dark Blue
+$blue2: $middle-blue // Middle Blue
+$blue3: $my-blue // MY Blue
+$blue4: $hover-list-color // Hover-list-color
+
+$pt-intent-danger: $destructive-red
+$red2: darken($destructive-red, 5%)
+$red1: darken($destructive-red, 10%)
+$orange1: $warning-orange // Warning-orange
+$gold1: $alert-yellow // Alert-yellow
+$pt-intent-success: $success-green
+$green2: darken($success-green, 5%)
+$greenm1: darken($success-green, 10%)
+
+// Common
+$pt-grid-size: 10px
+$pt-border-radius: 2px
+$pt-font-family: $main-font-family
+
+// Buttons
+$pt-button-height: $pt-grid-size * 4
+$pt-button-height-small: $pt-grid-size * 3
+$pt-button-height-smaller: $pt-grid-size * 2.2
+$pt-button-height-large: $pt-grid-size * 4
+
+// $button-box-shadow: none
+// $button-box-shadow-active: none
+// $button-intent-box-shadow: none
+// $button-intent-box-shadow-active: none
+
+// Checkbox : Unchecked
+$control-background-color: $background-color
+$control-background-color-hover: darken($background-color, 5%)
+$control-background-color-active: darken($background-color, 15%)
+
+// Checkbox && Switch : Checked
+$control-checked-background-color: $my-blue
+$control-checked-background-color-hover: darken($my-blue, 5%)
+$control-checked-background-color-active: darken($my-blue, 15%)
+
+// Switch : Unchecked
+$switch-background-color: $gray-4
+$switch-background-color-hover: darken($gray-4, 5%)
+$switch-background-color-active: darken($gray-4, 15%)
+
+// Switch disabled : Checked/Unchecked
+$switch-background-color-disabled: $gray-2
+$switch-checked-background-color-disabled: $gray-2
+
+// Import files in the same order that they are documented in the docs
+@import "~@blueprintjs/core/src/common/_variables.scss"
+@import "~@blueprintjs/core/src/common/_colors.scss"
+
+@import "~@blueprintjs/core/src/_reset.scss"
+@import "~@blueprintjs/core/src/_typography.scss"
+//@import "~@blueprintjs/core/src/_accessibility.scss"
+
+@import "~@blueprintjs/core/src/components/_index.scss"
+@import '~@blueprintjs/icons/lib/css/blueprint-icons.css'

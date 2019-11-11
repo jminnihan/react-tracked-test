@@ -1,0 +1,62 @@
+
+@import '~mathsass/dist/_math.scss'
+
+$browser-context: 16
+
+/// em() function will take input number and divide by 1 em (16px)
+@function em($pixels, $context: $browser-context)
+  @return #{$pixels/$context}em
+
+/// rem() function will take input number and divide by 1 rem (16px)
+@function rem($pixels, $context: $browser-context)
+  @return #{$pixels/$context}rem
+
+@function easeOutElastic($time, $begin, $change, $duration)
+  $s: 1.70158
+  $p: 0
+  $a: $change
+
+  @if ($time == 0)
+    @return $begin
+
+  $time: $time / $duration
+  @if ($time == 1)
+    @return $begin + $change
+
+  @if ($p == 0)
+    $p: $duration * .3
+
+  @if ($a < abs($change))
+    $a: $change
+    $s: $p / 4
+  @else
+    $s: $p / (2 * $PI) * asin($change / $a)
+
+  @return $a * pow(2, -10 * $time) * sin( ($time * $duration - $s) * (2 * $PI) / $p ) + $change + $begin
+
+@function easeInOutElastic($time, $begin, $change, $duration)
+  $s: 1.70158
+  $p: 0
+  $a: $change
+
+  @if ($time==0)
+    @return $begin
+
+  $time: $time / ($duration / 2)
+  @if ($time == 2)
+    @return $begin + $change
+
+  $p: $duration * (.3 * 1.5)
+
+  @if ($a < abs($change))
+    $a: $change
+    $s: $p / 4
+  @else
+    $s: $p / (2 * $PI) * asin($change / $a)
+
+  @if ($time < 1)
+    $time: $time - 1
+    @return -.5 * ($a * pow(2, 10 * $time) * sin(($time * $duration - $s) * (2 * $PI) / $p )) + $begin
+
+  $time: $time - 1
+  @return $a * pow(2, -10 * $time) * sin( ($time * $duration - $s) * (2 * $PI) / $p ) *.5 + $change + $begin

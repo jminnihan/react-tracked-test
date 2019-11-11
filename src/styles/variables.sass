@@ -1,0 +1,121 @@
+
+@import './functions.sass'
+
+/// Fonts
+$main-font-family: Arial, Helvetica, sans-serif
+
+/// Colors
+
+/// Secondary colors
+// Used for user interface elements, large background areas, dividers and lines.
+$gray-1: #ebecee
+$gray-2: #e2e4e7
+$gray-3: #d5d8dc
+$gray-4: #c7cad0
+$gray-5: #aaafb8
+$gray-6: #808895
+$gray-7: #676f7c
+$gray-8: #273342
+
+/// Primary colors
+// The primary color is the color displayed most frequently across the screens and components.
+$my-blue: #0f58d6
+$my-blue-hover: #1E57BB
+$my-blue-active: #09398B
+
+$black: #000000
+$white: #ffffff
+$background-color: #f6f6f6
+$text-color: $gray-8
+
+/// Accent colors
+// The accents colours are designed to add flavour and to highlight information. Avoid using too many in the same context as it may distract the user from the information it presents.
+$middle-blue: $my-blue-hover
+$dark-blue: $my-blue-active
+$highlight-background-color: #ffd95b
+
+$my-red: #eb202a
+$my-red-hover: #cc0000
+$my-red-active: #770000
+
+$my-green: #048942
+$my-green-disabled: #b3ffb3
+$my-green-hover: #006400
+$my-green-active: #004400
+
+$my-yellow: #ffca15
+$my-yellow-hover: #ffaa15
+$my-yellow-active: #ff9915
+
+/// Stoplight colors
+// Stoplight colors are for indicating error conditions, warnings, alerts and successes. Mainly used as background color on graphical elements. Avoid using too many in the same context as it may distract the user from the information it presents.
+$destructive-red: #cc0000
+$warning-orange: #ff8004
+$alert-yellow: $my-yellow
+$success-green: $my-green
+
+$odd-list-row-color: #f8f8f8
+
+/// Hover
+// Used for hover effect in lists and cards.
+$hover-list-color: #f3fafb
+$hover-table-row-background: #e7eefa
+$hover-table-row-box-shadow: inset 0 0 0 1px #4f84e0
+// Color for marking highlighted text and search
+$highlight: #FFD95B
+
+// Dragging/grabbing on grab-able/drag-able items
+$grabable-list-item-color: #CFDEF7
+
+/// Animations
+$default-animation-time: .2s
+$ease: $default-animation-time ease
+
+/// Margins
+///  1px = 0.0625rem
+///  2px = 0.125rem
+///  3px = 0.1875rem
+///  4px = 0.25rem
+///  5px = 0.3125rem
+///  6px = 0.375rem
+///  7px = 0.4375rem
+///  8px = 0.500rem
+/// 10px = 0.625rem
+/// 12px = 0.75rem
+/// 14px = 0.875rem
+/// 16px = 1rem (base)
+/// 18px = 1.125rem
+/// 20px = 1.25rem
+/// 24px = 1.5rem
+/// 30px = 1.875rem
+/// 32px = 2rem
+/// rem() function will take input number and divide by 1 rem (16px)
+$button-margin: rem(16)
+$topNav-height: rem(60)
+$card-margin: rem(20)
+
+/// Grid Row Height - jtm
+$grid-line-height: 19px
+$grid-row-height: 32px
+
+/// Elevation/Shadows
+// Used for drop shadow and cards or popups
+$elevation-1: 0 0 1px 1px rgba(39,51,66,0.05), 0 1px 2px 0 rgba(39,51,66,0.1)
+$elevation-2: 0 1px 1px 0 rgba(39,51,66,0.1), 0 1px 5px 0 rgba(39,51,66,0.1), 0 0 6px 0 rgba(39,51,66,0.12)
+$elevation-3: 0 1px 1px 0 rgba(39,51,66,0.1), 0 1px 6px 0 rgba(39,51,66,0.1), 0 0 10px 0 rgba(39,51,66,0.12)
+
+$elevation-popups: 0 0 1px 0 rgba(39,51,66,0.1), 0 2px 4px 0 rgba(39,51,66,0.08), 0 8px 24px 0 rgba(39,51,66,0.2)
+
+$elevation-1-top: 0 -2px 1px -2px rgba(39,51,66,0.05), 0 1px 2px -2px rgba(39,51,66,0.1)
+
+/// Gradient overlay on buttons
+// Used on secondary buttons
+$secondary-background-gradient: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0))
+$secondary-background: #f5f8fa
+$secondary-box-shadow: inset 0 0 0 1px rgba(39, 51, 66, 0.2), inset 0 -1px 0 rgba(39, 51, 66, 0.1)
+
+$weight-black: 900
+$weight-bold: bold
+$weight-light: normal
+$weight-medium: 500
+$weight-normal: normal

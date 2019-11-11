@@ -1,0 +1,26 @@
+svg > g > g > g > g > g > text {
+  color: #485A64;
+  font-family: inherit; }
+
+div.page-header {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  max-height: 210px;
+  width: 100%; }
+
+div.separator {
+  display: flex;
+  flex-direction: row;
+  height: 0;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+div.dashboard {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  padding-top: 10px;
+  width: 100%; }
+
+/*# sourceMappingURL=HomePage.css.map */
