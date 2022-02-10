@@ -45,7 +45,7 @@
     "@types/react-router-dom": "^5.1.2",
     "delay": "^4.3.0",
     "mathsass": "^0.11.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "sass-svg-uri": "^1.0.0",
     "autoprefixer": "latest"
   }
